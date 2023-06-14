@@ -4,11 +4,11 @@ The ReneVerse enables players and game developers to tokenize their items and ac
 
 Head over to [https://app.reneverse.io/register](https://app.reneverse.io/register) and fill up your credentials while selecting User Type as Game Developer or Gamer.
 
-<img src="../../.gitbook/assets/image (16).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (20).png" alt="" data-size="original">
 
 In the next step, you should receive an OTP code in your email. Please also check your spam folder and mark us a trustful in case you find us there.
 
-![](<../../.gitbook/assets/image (30).png>)
+![](<../../.gitbook/assets/image (36).png>)
 
 If you don't receive an email after a few minutes, please request a new OTP code by clicking the "Send again" button.
 

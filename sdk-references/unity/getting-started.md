@@ -8,23 +8,23 @@ Import the Reneverse Unity SDK, by downloading the `.unitypackage` file from [.]
 
 Add the package to your Unity project by clicking `Assets` > `Import Package` > `Custom Package` like so:
 
-![](<../../.gitbook/assets/image (11).png>)
+![](<../../.gitbook/assets/image (13).png>)
 
 Select the `.unitypackage` file you just downloaded from documentation.
 
 Leave the default files selected, and click `Import`:
 
-![](<../../.gitbook/assets/image (14).png>)
+![](<../../.gitbook/assets/image (16).png>)
 
 In your `Project` window now, you'll be able to see all of the resources that were imported:
 
-![](<../../.gitbook/assets/image (19).png>)
+![](<../../.gitbook/assets/image (23).png>)
 
 ### Game & SDK Integration
 
 To open the Reneverse Settings inside Unity, navigate to the **Window** menu in the Unity Editor and click on **Reneverse Settings**.
 
-<img src="../../.gitbook/assets/image (13).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (14).png" alt="" data-size="original">
 
 **Reneverse Settings Fields**&#x20;
 
@@ -34,7 +34,7 @@ The following fields are available in the Renverse Settings:
 * `PrivateKey` - Your ReneVerse Private Key.
 * `GameID` - Your ReneVerse Game ID.
 
-![](<../../.gitbook/assets/image (5).png>)
+![](<../../.gitbook/assets/image (6).png>)
 
 Fill up the fields that you have generated from [integrating-with-sdk.md](../../getting-started/integrating-with-sdk.md "mention") and VOILA!! your game is now connected to Reneverse.
 

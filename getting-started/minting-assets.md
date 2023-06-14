@@ -10,7 +10,7 @@ When minting a token, a smart contract is written to define the characteristics 
 
 Click on Mint Asset to open the mint asset dialog.
 
-![](<../.gitbook/assets/image (17).png>)
+![](<../.gitbook/assets/image (21).png>)
 
 #### Asset Recipient
 
@@ -24,7 +24,7 @@ Asset Title and Description should be set based on your previous values saved un
 
 Asset image and animation should be selectable based on the images and animation uploaded in [metadata.md](configuring-asset-template/metadata.md "mention").
 
-![](<../.gitbook/assets/image (1).png>)
+![](<../.gitbook/assets/image (2).png>)
 
 #### Asset Metadata Attribute Values
 
@@ -34,7 +34,7 @@ Asset Metadata Attribute Values should be added based on the attributes and valu
 
 Finally, Click on Mint and we have started the process of minting. It will take 4-5 minutes to mint. You will get a final confirmation once the minting is complete.
 
-![](<../.gitbook/assets/image (29).png>)
+![](<../.gitbook/assets/image (35).png>)
 
 Voila :tada:, your assets are now available on the network for your game.
 

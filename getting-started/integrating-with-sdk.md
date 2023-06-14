@@ -4,15 +4,15 @@
 
 We need the API key, Private Key and GameID to integrate our assets with Reneverse SDKs. Open your game in Reneverse Portal, and click on settings. Open the API credentials to reveal the keys.
 
-![](<../.gitbook/assets/image (3).png>)
+![](<../.gitbook/assets/image (4).png>)
 
 Well, we are missing an API Key and a private key. Let's generate it, and click on Generate API Credentials. Expiry data cannot be more than 6 months from the current date.
 
-![](<../.gitbook/assets/image (26).png>)
+![](<../.gitbook/assets/image (30).png>)
 
 Click on Generate.
 
-![](<../.gitbook/assets/image (18).png>)
+![](<../.gitbook/assets/image (22).png>)
 
 **Don't close the tab in your browser, we will copy the credentials from here.**&#x20;
 
