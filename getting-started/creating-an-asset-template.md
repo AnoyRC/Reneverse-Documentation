@@ -6,7 +6,7 @@ A collection helps in keeping your asset templates organized. Your game may be a
 
 Open your game and click on New Collection.
 
-![](<../.gitbook/assets/image (27).png>)
+![](<../.gitbook/assets/image (26).png>)
 
 Click on the collection you made to view the asset templates you created earlier.
 
@@ -22,7 +22,7 @@ Let's create our first asset template by clicking on New Asset Template.
 
 Add details for your first asset template.
 
-![](<../.gitbook/assets/image (26).png>)
+![](<../.gitbook/assets/image (27).png>)
 
 Open your asset template and we are ready to mint our first asset :)
 

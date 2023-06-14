@@ -154,7 +154,7 @@ Here is an example and indeed the name of the Attribute is "Style"
 
 You set this values once you create assets and can modify them in this menu:
 
-<img src="../../.gitbook/assets/image (18).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (19).png" alt="" data-size="original">
 
 **`An example of Asset entity`**
 
