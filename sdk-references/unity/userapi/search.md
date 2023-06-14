@@ -1,6 +1,6 @@
 # Search()
 
-Get the list of Users corresponding to the search term provided as a parameter using `Search()` method provided with [.](./ "mention").
+Get the list of Users connected to the game corresponding to the search term provided as a parameter using `Search()` method provided with [.](./ "mention").
 
 ### Usage
 
@@ -10,11 +10,15 @@ var usersData = await ReneAPI.User().Search("search-term");
 
 ### Configuration
 
+
+
 **Search Term**
 
 The term which needs to be search.
 
 must be a `string`.
+
+
 
 ### Returns
 

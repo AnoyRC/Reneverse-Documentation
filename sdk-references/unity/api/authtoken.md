@@ -15,4 +15,4 @@ string authToken = ReneAPI.AuthToken;
 ### References
 
 * [isauthorized.md](isauthorized.md "mention")
-*
+* [connect.md](../gameapi/connect.md "mention")

@@ -10,8 +10,13 @@ A user must be connected to the game using `Game().Connect()` and authorized wit
 var myProfile = await ReneAPI.User().Profile();
 ```
 
+### Contents
+
+* [profile.md](profile.md "mention")
+* [search.md](search.md "mention")
+
 ### References
 
 * [isauthorized.md](../api/isauthorized.md "mention")
-*
+* [connect.md](../gameapi/connect.md "mention")
 

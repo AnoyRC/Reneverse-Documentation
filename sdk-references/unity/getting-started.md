@@ -24,7 +24,7 @@ In your `Project` window now, you'll be able to see all of the resources that we
 
 To open the Reneverse Settings inside Unity, navigate to the **Window** menu in the Unity Editor and click on **Reneverse Settings**.
 
-<img src="../../.gitbook/assets/image (14).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (15).png" alt="" data-size="original">
 
 **Reneverse Settings Fields**&#x20;
 
@@ -34,7 +34,7 @@ The following fields are available in the Renverse Settings:
 * `PrivateKey` - Your ReneVerse Private Key.
 * `GameID` - Your ReneVerse Game ID.
 
-![](<../../.gitbook/assets/image (6).png>)
+![](<../../.gitbook/assets/image (5).png>)
 
 Fill up the fields that you have generated from [integrating-with-sdk.md](../../getting-started/integrating-with-sdk.md "mention") and VOILA!! your game is now connected to Reneverse.
 

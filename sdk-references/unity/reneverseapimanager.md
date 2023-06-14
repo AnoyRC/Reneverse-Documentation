@@ -2,7 +2,7 @@
 
 The `ReneverseAPIManager` is the entry point to all functionality of the Unity SDK.
 
-You initialize the SDK with `API()`  function it provides and use the instance to access the different methods and properties of the SDK.
+You initialize the SDK with `API()` function it provides and use the instance to access the different methods and properties of the SDK.
 
 ## Usage
 
@@ -63,6 +63,10 @@ public class ReneverseManager : MonoBehaviour
 }
 ```
 
+**References**
+
+* [connect.md](gameapi/connect.md "mention")
+
 Afterwards you have many ways to implement loaded from ReneVerse service information about users' Assets and here is one of them. We can use Coroutines since they are Unity specific and less error prone:
 
 ```csharp
@@ -75,31 +79,35 @@ As you remember we are waiting for the user to accept his entry into the ReneVer
 
 ```csharp
 //Function to check, if the user is authorizing through Reneverse Dashboard
-    private IEnumerator ConnectReneService()
+private IEnumerator ConnectReneService()
+{
+    var counter = TimeToWait;
+    var userConnected = false;
+    //Interval how often the code checks that user accepted to log in
+    var secondsToDecrement = 1;
+    while (counter >= 0 && !userConnected)
     {
-        var counter = TimeToWait;
-        var userConnected = false;
-        //Interval how often the code checks that user accepted to log in
-        var secondsToDecrement = 1;
-        while (counter >= 0 && !userConnected)
+        Timer.text = counter.ToString();
+        if (ReneAPI.IsAuthorized())
         {
-            Timer.text = counter.ToString();
-            if (ReneAPI.IsAuthorized())
-            {
 
-                //Here can be added any extra logic once the user logged in
+            //Here can be added any extra logic once the user logged in
 
-                yield return GetUserAssetsAsync();
+            yield return GetUserAssetsAsync();
 
 
-                userConnected = true;
-            }
-
-            yield return new WaitForSeconds(secondsToDecrement);
-            counter -= secondsToDecrement;
+            userConnected = true;
         }
+
+        yield return new WaitForSeconds(secondsToDecrement);
+        counter -= secondsToDecrement;
     }
+}
 ```
+
+**References**
+
+* [isauthorized.md](api/isauthorized.md "mention")
 
 ### Get User Assets
 
@@ -107,38 +115,42 @@ Now let's look at the `GetUserAssetsAsync(reneApi)` method that has the necessar
 
 ```csharp
 //Get all the NFTs owned by the user in this game
-    private async Task GetUserAssetsAsync()
-    {
-        AssetsResponse.AssetsData userAssets = await ReneAPI.Game().Assets();
-        //By this way you could check in the Unity console your NFT assets
-        userAssets?.Items.ForEach(asset => Debug.Log
-            ($" - Asset Id '{asset.NftId}' Name '{asset.Metadata.Name}"));
+private async Task GetUserAssetsAsync()
+{
+    AssetsResponse.AssetsData userAssets = await ReneAPI.Game().Assets();
+    //By this way you could check in the Unity console your NFT assets
+    userAssets?.Items.ForEach(asset => Debug.Log
+        ($" - Asset Id '{asset.NftId}' Name '{asset.Metadata.Name}"));
 
-        userAssets?.Items.ForEach(asset =>
+    userAssets?.Items.ForEach(asset =>
+    {
+        string assetName = asset.Metadata.Name;
+        string assetImageUrl = asset.Metadata.Image;
+        string assetStyle = "";
+        asset.Metadata?.Attributes?.ForEach(attribute =>
         {
-            string assetName = asset.Metadata.Name;
-            string assetImageUrl = asset.Metadata.Image;
-            string assetStyle = "";
-            asset.Metadata?.Attributes?.ForEach(attribute =>
+        //Keep in mind that this TraitType should be preset in your Reneverse Account
+            if (attribute.TraitType == "Style")
             {
-            //Keep in mind that this TraitType should be preset in your Reneverse Account
-                if (attribute.TraitType == "Style")
-                {
-                    assetStyle = attribute.Value;
-                }
-            });
-            //An example of how you could keep retrieved information
-            Asset assetObj = new Asset(assetName, assetImageUrl, assetStyle);
-            //one of many ways to add it to the game logic
-            //_assetManager can be of list datatype 
-            _assetManager.userAssets.Add(assetObj);
+                assetStyle = attribute.Value;
+            }
         });
-    }
+        //An example of how you could keep retrieved information
+        Asset assetObj = new Asset(assetName, assetImageUrl, assetStyle);
+        //one of many ways to add it to the game logic
+        //_assetManager can be of list datatype 
+        _assetManager.userAssets.Add(assetObj);
+    });
+}
 ```
+
+**References**
+
+* [assets.md](gameapi/assets.md "mention")
 
 Here is an example and indeed the name of the Attribute is "Style"
 
-<img src="../../.gitbook/assets/image (1).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image.png" alt="" data-size="original">
 
 You set this values once you create assets and can modify them in this menu:
 

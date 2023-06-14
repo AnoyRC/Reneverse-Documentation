@@ -28,4 +28,4 @@ Returns instance of the `UserAPI` class containing several useful functions
 
 * [userapi](../userapi/ "mention")
 * [isauthorized.md](isauthorized.md "mention")
-*
+* [connect.md](../gameapi/connect.md "mention")

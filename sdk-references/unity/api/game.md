@@ -1,6 +1,6 @@
 # Game()
 
-Initializes `GameAPI` or returns `GameAPI` if initialized already, for the game which contains several functions and variables required to connect, mint, etc.
+Initializes `GameAPI` or returns `GameAPI` if initialized already, for the game which contains several functions required to connect, mint, etc.
 
 ### Usage
 
@@ -24,4 +24,4 @@ Returns instance of the `GameAPI` class containing several useful functions
 
 ### References
 
-* [gameapi.md](../gameapi.md "mention")
+* [gameapi](../gameapi/ "mention")

@@ -22,5 +22,5 @@ Voila🎉 After inserting all information and confirming Privacy Policy, you sho
 
 After creating your organization, open your organization to create your first game.
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 

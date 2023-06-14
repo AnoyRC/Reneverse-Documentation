@@ -34,14 +34,35 @@
   * [Getting Started](sdk-references/unity/getting-started.md)
   * [ReneverseAPIManager](sdk-references/unity/reneverseapimanager.md)
   * [API](sdk-references/unity/api/README.md)
-    * [GameId](sdk-references/unity/api/gameid.md)
+    * [GameID](sdk-references/unity/api/gameid.md)
     * [UserID](sdk-references/unity/api/userid.md)
     * [AuthToken](sdk-references/unity/api/authtoken.md)
     * [IsAuthorized()](sdk-references/unity/api/isauthorized.md)
     * [Game()](sdk-references/unity/api/game.md)
     * [User()](sdk-references/unity/api/user.md)
-  * [GameAPI](sdk-references/unity/gameapi.md)
+  * [GameAPI](sdk-references/unity/gameapi/README.md)
+    * [Connect()](sdk-references/unity/gameapi/connect.md)
+    * [Asset()](sdk-references/unity/gameapi/asset.md)
+    * [Assets()](sdk-references/unity/gameapi/assets.md)
+    * [AssetTemplate()](sdk-references/unity/gameapi/assettemplate.md)
+    * [AssetTemplates()](sdk-references/unity/gameapi/assettemplates.md)
+    * [AssetMint()](sdk-references/unity/gameapi/assetmint.md)
+    * [AssetTransfer()](sdk-references/unity/gameapi/assettransfer.md)
   * [UserAPI](sdk-references/unity/userapi/README.md)
     * [Profile()](sdk-references/unity/userapi/profile.md)
     * [Search()](sdk-references/unity/userapi/search.md)
 * [Unreal](sdk-references/unreal.md)
+
+## Code Examples
+
+* [Unity](code-examples/unity/README.md)
+  * [Connect to Reneverse](code-examples/unity/connect-to-reneverse.md)
+  * [Request Authorization](code-examples/unity/request-authorization.md)
+  * [Get User Assets](code-examples/unity/get-user-assets.md)
+  * [Mint Assets](code-examples/unity/mint-assets.md)
+  * [Search Users](code-examples/unity/search-users.md)
+  * [Transfer Asset](code-examples/unity/transfer-asset.md)
+
+## Notes
+
+* [Note from Anoy](notes/note-from-anoy.md)

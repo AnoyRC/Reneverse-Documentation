@@ -1,4 +1,4 @@
-# GameId
+# GameID
 
 Returns the `GameID` of the connected game, provided you have integrated the SDK with Reneverse Portal. The field in read-only.
 

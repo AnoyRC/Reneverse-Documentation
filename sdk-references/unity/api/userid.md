@@ -15,4 +15,4 @@ string userId = ReneAPI.UserID;
 ### References
 
 * [isauthorized.md](isauthorized.md "mention")
-*
+* [connect.md](../gameapi/connect.md "mention")
