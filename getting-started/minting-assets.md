@@ -10,7 +10,7 @@ When minting a token, a smart contract is written to define the characteristics 
 
 Click on Mint Asset to open the mint asset dialog.
 
-![](<../.gitbook/assets/image (20).png>)
+![](<../.gitbook/assets/image (21).png>)
 
 #### Asset Recipient
 

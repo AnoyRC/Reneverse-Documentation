@@ -22,7 +22,7 @@ Let's create our first asset template by clicking on New Asset Template.
 
 Add details for your first asset template.
 
-![](<../.gitbook/assets/image (28).png>)
+![](<../.gitbook/assets/image (26).png>)
 
 Open your asset template and we are ready to mint our first asset :)
 

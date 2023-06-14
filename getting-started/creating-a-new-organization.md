@@ -6,7 +6,7 @@ After logging in to your account, you will be presented with the Reneverse Dashb
 
 Hover in your profile picture at the top right and you will see the following options.
 
-![](<../.gitbook/assets/image (26).png>)
+![](<../.gitbook/assets/image (28).png>)
 
 Let's create our first organization by clicking on Organizations :)
 
